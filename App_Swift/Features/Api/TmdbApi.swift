@@ -7,14 +7,6 @@
 
 import Foundation
 
-let apiKey = "56e674cbce6fa4a0cebcc75917bb8925"
-
-let url = URL(string: "https://api.themoviedb.org/3/movie/100?api_key=\(apiKey)&language=fr-FR")!
-
-let fetchGenreUrl = "https://api.themoviedb.org/3/genre/movie/list?api_key=\(apiKey)&language=fr-FR"
-let fetchJohnnyMoviesUrl = "https://api.themoviedb.org/3/list/6656?api_key=\(apiKey)&language=fr-FR"
-let fetchDisneyMoviesUrl = "https://api.themoviedb.org/3/discover/movie?api_key=56e674cbce6fa4a0cebcc75917bb8925&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_companies=6125&with_watch_monetization_types=flatrate&language=fr-FR"
-
 let imagesUrlPrefix = "https://image.tmdb.org/t/p/w500"
 let backdropImagesUrlPrefix = "https://image.tmdb.org/t/p/original"
 

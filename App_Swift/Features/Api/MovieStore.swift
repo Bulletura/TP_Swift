@@ -8,7 +8,10 @@
 import Foundation
 extension URLComponents {
     static func buildURLApi(version: String = "3", api_key: String? = nil, path: String, parameters: [String: String]? = nil) -> URLComponents {
-        let apiKey = apiKey
+        guard let apiKey = Bundle.main.infoDictionary?["API_KEY"] as? String else {
+            return .init()
+        }
+        
         var urlComponent = URLComponents()
         var allParameters: [String:String] = [:]
         if let parameters = parameters {

@@ -28,6 +28,7 @@
 		ED64482A2A2DC71200E9DDDB /* MovieStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED6448292A2DC71200E9DDDB /* MovieStore.swift */; };
 		ED671A7C2A1B92C200766BC6 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED671A7B2A1B92C200766BC6 /* MapView.swift */; };
 		ED671A7E2A1B965A00766BC6 /* MapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED671A7D2A1B965A00766BC6 /* MapAnnotationView.swift */; };
+		EDCABD1B2A2F5B31005926FA /* Config-Dev.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = EDCABD1A2A2F5B31005926FA /* Config-Dev.xcconfig */; };
 		EDFE7E4329ED2578003BDB24 /* DescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE7E4229ED2578003BDB24 /* DescriptionView.swift */; };
 		EDFE7E4529ED2F28003BDB24 /* TmdbApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE7E4429ED2F28003BDB24 /* TmdbApi.swift */; };
 		EDFE7E4729EE72D0003BDB24 /* HorizontalScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFE7E4629EE72D0003BDB24 /* HorizontalScrollView.swift */; };
@@ -80,6 +81,7 @@
 		ED6448292A2DC71200E9DDDB /* MovieStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieStore.swift; sourceTree = "<group>"; };
 		ED671A7B2A1B92C200766BC6 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		ED671A7D2A1B965A00766BC6 /* MapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapAnnotationView.swift; sourceTree = "<group>"; };
+		EDCABD1A2A2F5B31005926FA /* Config-Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Config-Dev.xcconfig"; sourceTree = "<group>"; };
 		EDFE7E4229ED2578003BDB24 /* DescriptionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionView.swift; sourceTree = "<group>"; };
 		EDFE7E4429ED2F28003BDB24 /* TmdbApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TmdbApi.swift; sourceTree = "<group>"; };
 		EDFE7E4629EE72D0003BDB24 /* HorizontalScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalScrollView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 		ED0FD09E29DC00DD003EA5C7 = {
 			isa = PBXGroup;
 			children = (
+				EDCABD1A2A2F5B31005926FA /* Config-Dev.xcconfig */,
 				ED0FD0A929DC00DD003EA5C7 /* App_Swift */,
 				ED0FD0BA29DC00E7003EA5C7 /* App_SwiftTests */,
 				ED0FD0C429DC00E7003EA5C7 /* App_SwiftUITests */,
@@ -346,6 +349,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED0FD0B229DC00E7003EA5C7 /* Preview Assets.xcassets in Resources */,
+				EDCABD1B2A2F5B31005926FA /* Config-Dev.xcconfig in Resources */,
 				ED0FD0AF29DC00E7003EA5C7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -433,6 +437,7 @@
 /* Begin XCBuildConfiguration section */
 		ED0FD0C929DC00E7003EA5C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EDCABD1A2A2F5B31005926FA /* Config-Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -555,6 +560,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App_Swift/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "App-Swift-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Yo;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -584,6 +590,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"App_Swift/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "App-Swift-Info.plist";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = Yo;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
